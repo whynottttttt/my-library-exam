@@ -55,19 +55,7 @@ const BookCard = ({ book, isSearchResult }) => {
 
     const authorName = getAuthorName();
 
-    // 좋아요 버튼 클릭 핸들러
-    const handleLikeClick = (e) => {
-        e.stopPropagation();
 
-        if (!isLoggedIn) {
-            // 로그인되지 않았으면 현재 경로 저장 후 로그인 페이지로 이동
-            alert(MESSAGES.LOGIN_REQUIRED);
-            setPreviousPath(window.location.pathname);
-            navigate(ROUTES.LOGIN);
-            return;
-        }
-
-        toggleLikeBook(book);
     };
 
     return (

@@ -44,9 +44,8 @@ const queryClient = new QueryClient({
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
-  // 페이지 로딩 시 스피너 표시
+ 
   useEffect(() => {
-    // 페이지 로딩 시뮬레이션
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 1000);
