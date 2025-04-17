@@ -11,7 +11,6 @@ const Login = () => {
     const { login, isLoggedIn, previousPath } = useAuthStore();
     const navigate = useNavigate();
 
-    // 이미 로그인되어 있으면 이전 페이지로 리다이렉트
     useEffect(() => {
         if (isLoggedIn) {
             navigate(previousPath || '/');
@@ -28,11 +27,10 @@ const Login = () => {
 
         setIsLoading(true);
 
-        // 로그인 시뮬레이션 (실제로는 API 호출)
+
         setTimeout(() => {
             login({ username, id: Date.now() });
             setIsLoading(false);
-            // 로그인 후 이전 페이지로 리다이렉트
             navigate(previousPath || ROUTES.HOME);
         }, 1000);
     };
