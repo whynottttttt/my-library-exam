@@ -3,9 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { QueryClient, QueryClientProvider } from 'react-query';
 import Navbar from './components/Navbar';
 import BookAll from './page/BookAll';
-import MyBooks from './page/Mybooks';
 import Login from './page/Login';
-import { ROUTES } from './utils/constants';
 import './App.css';
 
 
@@ -44,7 +42,7 @@ const queryClient = new QueryClient({
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
- 
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);

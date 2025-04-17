@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import useAuthStore from '../store/useAuthStore';
-import { ROUTES } from '../utils/constants';
 import LoadingSpinner from '../components/LoadingSpinner';
 
 const Login = () => {

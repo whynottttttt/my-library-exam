@@ -98,11 +98,12 @@
   cursor: pointer;
   font-size: 1rem;
   margin-top: 10px;
+}
 
-  .welcome-message {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 1.2rem;
-    color: rgb(230, 200, 140);
-    background-color: rgb(27, 59, 54);
-  }
+.welcome-message {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.2rem;
+  color: rgb(230, 200, 140);
+  background-color: rgb(27, 59, 54);
+}

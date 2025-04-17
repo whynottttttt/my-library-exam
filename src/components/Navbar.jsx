@@ -1,8 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ROUTES } from '../utils/constants';
-import useAuthStore from '../store/useAuthStore';
-import HamburgerMenu from './HamburgerMenu';
 
 const Navbar = () => {
     const { isLoggedIn, logout } = useAuthStore();

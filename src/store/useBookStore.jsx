@@ -8,21 +8,21 @@ const useBookStore = create(
             likedBooks: [],
             searchQuery: '',
 
- 
+
             setSearchQuery: (query) => set({ searchQuery: query }),
 
-        
+
             toggleLikeBook: (book) => {
                 const { likedBooks } = get();
                 const isAlreadyLiked = likedBooks.some((likedBook) => likedBook.key === book.key);
 
                 if (isAlreadyLiked) {
-         
+
                     set({
                         likedBooks: likedBooks.filter((likedBook) => likedBook.key !== book.key)
                     });
                 } else {
-                
+
                     set({
                         likedBooks: [...likedBooks, book]
                     });

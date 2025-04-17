@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import BookGrid from '../components/BookGrid';
 import LoadingSpinner from '../components/LoadingSpinner';
 
 

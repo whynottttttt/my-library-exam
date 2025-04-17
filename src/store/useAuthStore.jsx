@@ -17,7 +17,7 @@ const useAuthStore = create(
             setPreviousPath: (path) => set({ previousPath: path }),
         }),
         {
-            name: 'user-auth-storage', 
+            name: 'user-auth-storage',
         }
     )
 );
